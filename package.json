@@ -1,0 +1,23 @@
+{
+  "name": "todoapp-nodejs",
+  "version": "1.0.0",
+  "description": "to do app in node.js server side programming",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "todo",
+    "assignment2",
+    "nodejs",
+    "2doapp",
+    "todoapp"
+  ],
+  "author": "AnnyIqbal",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
+  }
+}
