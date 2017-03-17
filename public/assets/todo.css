@@ -1,0 +1,52 @@
+.page {
+    width: 80%;
+    margin: 5px auto;
+    border: 1px solid rgba(163, 51, 200, 0.41);
+    border-radius: 5px;
+    background-image: url(/assets/rxjs.png);
+}
+.flexbox {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.inline {
+    display: inline-block;
+    margin-top: auto;
+    flex: 1 1 auto;
+}
+.center {
+    width: 90%;
+    margin: 0 auto;
+}
+@media screen and (max-width: 544px) {
+    .page-about {
+        width: 100%;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 544px){
+    .page-about {
+        width: 100%;
+        margin: auto;
+    }
+ }
+@media screen and (min-width: 768px){ 
+    .page-about {
+        width: 80%;
+        margin: 5px auto;
+    }
+}
+@media screen and (min-width: 992px){ 
+   .page-about {
+        width: 70%;
+        margin: 5px auto;
+    }
+}
+@media screen and (min-width: 1200px){
+   .page-about {
+        width: 60%;
+        margin: 5px auto;
+    }
+ }
+
