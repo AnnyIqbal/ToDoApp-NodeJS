@@ -7,31 +7,29 @@
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link href="assets/todo.css" rel="stylesheet" type="text/css" />
+    <script src="assets/todo-list.js"> </script>
 </head>
 <body>
   <h1> My ToDo List </h1>
   <div class="page">
     <form class="flexbox">
       <div class="inline">
-        <label for="todo">Enter Task To Do</label>
-        <input id="todo" type="text" name="todo" autofocus required />
+        <input placeholder="Enter Task" type="text" name="todo" autofocus required />
+        <span *ngIf="checker()" class="inline">
+            <button type="submit">
+            add
+            </button>
+        </span>
       </div>
-
-      <span *ngIf="checker()" class="inline">
-        <button type="submit" (click)="addTask()">
-          add
-        </button>
-      </span>
     </form>
 
     <div class="center">
-      <ul class="flexbox">
-        <li> item1 </li>
-        <li> item2 </li>
-        <li> item3 </li>
+      <ul>
+        <% for(var i=0; i<todos.length; i++) { %>
+            <li><%= todos[i].item %></li>
+        <% } %>
       </ul>
     </div>
   </div>
-  <script src="../todo.js"> </script>
 </body>
 </html>
