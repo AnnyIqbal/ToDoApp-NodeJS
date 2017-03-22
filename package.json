@@ -4,7 +4,8 @@
   "description": "to do app in node.js server side programming",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node index"
   },
   "keywords": [
     "todo",
