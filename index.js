@@ -14,6 +14,6 @@ app.use(express.static('./public')); // path agr nhi den to ye har route p ye st
 todoController(app);
 
 //listening to port 3000
-app.listen(process.env.PORT || 3000); 
+app.listen(process.env.PORT || 3000); // process.envy.PORT => for heroku port
 console.log('listening to port 3000');
 
